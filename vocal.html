@@ -5,6 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vocal-Form</title>
 </head>
+     <style>
+        * {
+            box-sizing: border-box;
+            padding-top: 20px;
+            background-repeat: no-repeat;
+        }
+           
+    
+        body {
+            --gap: 1rem;
+            font-family: ui-sans-serif, system-ui, snas-serif;
+           
+            
+        }
+    
+        label {
+        text-align:center;
+        line-height:150%;
+        font-size: 23px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        }
+        legend {
+        text-align:center;
+        line-height:150%;
+        -webkit-text-stroke: 1px rgb(224, 143, 143);
+        -webkit-text-fill-color: rgb(221, 38, 38);
+        font-size: 30px;
+        text-shadow: 0 2px white, 0 3px #777;
+        }
+        
+        button {
+            background-color: hsl(90, 50%, 30%);
+            border: 0;
+            color: hsl(90, 50%, 95%);
+            margin-block-start: var(--gap);
+            padding: calc(var(--gap) / 2) var(--gap);
+        }
+    
+        button.listening {
+            background-color: hsl(0, 50%, 50%);
+            color: hsl(0, 50%, 95%);
+        }
+    
+        code {
+            background: #333;
+            color: lime;
+            display: block;
+            padding: calc(var(--gap) / 2);
+        }
+    
+        fieldset {
+            background-image: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(72, 198, 230));
+            border-radius: 5px;
+            border: 3px solid #0b837d;
+            padding: var(--gap);
+        }
+    
+        form {
+            margin: 0 auto;
+            
+            max-width: 30rem;
+            border-radius: 5px;
+        }
+    
+        input,
+        textarea {
+            border-radius: 8px;
+           
+            padding: calc(var(--gap) / 2);
+            resize: vertical;
+            width: 100%;
+        }
+    
+        label {
+            display: block;
+            font-weight: 400;
+            margin-block-start: var(--gap);
+        }
+    
+        p {
+            font-size: small;
+        }
+        .div1{
+        background-image: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(72, 198, 230));
+        width: 55%;
+        border-radius: 10px;
+        height: 500px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: whitesmoke;
+        border: 3px solid #0b837d;
+        background-size: cover;
+        box-sizing: border-box;
+      
+        }
+        .button{
+        background-color: white; 
+        color: black; 
+        border: 2px solid #0b837d;
+        width: 200px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        margin: 4px 2px;
+        border-radius: 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        }
+        .button:hover {
+            background-image: linear-gradient(to bottom right, rgb(99, 207, 166), rgb(234, 236, 223));
+      
+        color: rgb(0, 0, 0);
+        }
+        
+    </style>
 <body>
     <div class="div1" id="homeScreen">
         <legend id="heading">VOCALIZATION FORM FILLING</legend>
@@ -45,8 +163,10 @@
                 </div>
             </fieldset>
         </form>
-    </div>
-    <script>
+    </div>    
+   
+</body>
+     <script>
         function Start() {
             try {
                 if ('speechSynthesis' in window) {
@@ -194,124 +314,4 @@
         }
     
     </script>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-            padding-top: 20px;
-            background-repeat: no-repeat;
-        }
-           
-    
-        body {
-            --gap: 1rem;
-            font-family: ui-sans-serif, system-ui, snas-serif;
-           
-            
-        }
-    
-        label {
-        text-align:center;
-        line-height:150%;
-        font-size: 23px;
-        font-style: normal;
-        font-family: 'Times New Roman', Times, serif;
-        }
-        legend {
-        text-align:center;
-        line-height:150%;
-        -webkit-text-stroke: 1px rgb(224, 143, 143);
-        -webkit-text-fill-color: rgb(221, 38, 38);
-        font-size: 30px;
-        text-shadow: 0 2px white, 0 3px #777;
-        }
-        
-        button {
-            background-color: hsl(90, 50%, 30%);
-            border: 0;
-            color: hsl(90, 50%, 95%);
-            margin-block-start: var(--gap);
-            padding: calc(var(--gap) / 2) var(--gap);
-        }
-    
-        button.listening {
-            background-color: hsl(0, 50%, 50%);
-            color: hsl(0, 50%, 95%);
-        }
-    
-        code {
-            background: #333;
-            color: lime;
-            display: block;
-            padding: calc(var(--gap) / 2);
-        }
-    
-        fieldset {
-            background-image: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(72, 198, 230));
-            border-radius: 5px;
-            border: 3px solid #0b837d;
-            padding: var(--gap);
-        }
-    
-        form {
-            margin: 0 auto;
-            
-            max-width: 30rem;
-            border-radius: 5px;
-        }
-    
-        input,
-        textarea {
-            border-radius: 8px;
-           
-            padding: calc(var(--gap) / 2);
-            resize: vertical;
-            width: 100%;
-        }
-    
-        label {
-            display: block;
-            font-weight: 400;
-            margin-block-start: var(--gap);
-        }
-    
-        p {
-            font-size: small;
-        }
-        .div1{
-        background-image: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(72, 198, 230));
-        width: 55%;
-        border-radius: 10px;
-        height: 500px;
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-        background-color: whitesmoke;
-        border: 3px solid #0b837d;
-        background-size: cover;
-        box-sizing: border-box;
-      
-        }
-        .button{
-        background-color: white; 
-        color: black; 
-        border: 2px solid #0b837d;
-        width: 200px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-        margin: 4px 2px;
-        border-radius: 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        }
-        .button:hover {
-            background-image: linear-gradient(to bottom right, rgb(99, 207, 166), rgb(234, 236, 223));
-      
-        color: rgb(0, 0, 0);
-        }
-        
-    </style>
-</body>
 </html>
